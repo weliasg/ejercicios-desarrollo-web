@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Papillon Doré</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Le Papillon Doré</h1>
+      <p>Gastronomie française avec élégance</p>
+    </div>
+  </header>
+
+  <!-- Menú del día -->
+  <main>
+    <section class="menu-section">
+      <h2>Menu du Jour</h2>
+      <div class="menu-grid">
+        <article class="plato" data-desc="Salmón fresco a la mantequilla de limón, acompañado de espárragos.">
+          <h3>Saumon au Beurre Citronné</h3>
+          <p>€18</p>
+        </article>
+        <article class="plato" data-desc="Crema de calabaza con un toque de nuez moscada y crotones artesanales.">
+          <h3>Velouté de Potiron</h3>
+          <p>€9</p>
+        </article>
+        <article class="plato" data-desc="Tarta de manzana caramelizada con helado de vainilla bourbon.">
+          <h3>Tarte Tatin</h3>
+          <p>€7</p>
+        </article>
+      </div>
+      <div id="descripcionPlato" class="descripcion"></div>
+    </section>
+
+    <!-- Reservación -->
+    <section class="reserva-section">
+      <h2>Réservez votre table</h2>
+      <form id="reservaForm" class="reserva-form">
+        <input type="text" id="nombre" placeholder="Nom complet">
+        <input type="email" id="email" placeholder="Email">
+        <input type="date" id="fecha">
+        <input type="time" id="hora">
+        <button type="submit">Réserver</button>
+      </form>
+      <div id="mensaje" class="mensaje"></div>
+    </section>
+
+    <!-- Contacto y Mapa -->
+    <section class="contacto-section">
+      <h2>Nous trouver</h2>
+      <p>123 Rue de Paris, 75000 Paris, France</p>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps?q=paris,france&output=embed"
+          width="100%" height="300" style="border:0;" allowfullscreen="">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Le Papillon Doré - Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

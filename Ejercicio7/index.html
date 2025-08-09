@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia Creativa</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Agencia<span>Creativa</span></div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#cotizacion">Cotización</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Impulsa tu marca al siguiente nivel</h1>
+    <p>Marketing digital, branding y estrategia a tu medida.</p>
+    <a href="#cotizacion" class="btn">Solicita una cotización</a>
+  </section>
+
+  <main>
+    <!-- Servicios -->
+    <section id="servicios" class="servicios">
+      <h2>Servicios Destacados</h2>
+      <div class="grid">
+        <article>
+          <h3>Branding</h3>
+          <p>Diseño y desarrollo de identidad visual que conecta con tu audiencia.</p>
+        </article>
+        <article>
+          <h3>Marketing Digital</h3>
+          <p>Campañas estratégicas en redes sociales y publicidad online.</p>
+        </article>
+        <article>
+          <h3>SEO & SEM</h3>
+          <p>Optimización en buscadores y anuncios segmentados para tu público.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Clientes -->
+    <section id="clientes" class="clientes">
+        <h2>Clientes que confiaron en nosotros</h2>
+        <div class="logos">
+            <img src="https://picsum.photos/seed/logo1/120/60" alt="Cliente 1">
+            <img src="https://picsum.photos/seed/logo2/120/60" alt="Cliente 2">
+            <img src="https://picsum.photos/seed/logo3/120/60" alt="Cliente 3">
+            <img src="https://picsum.photos/seed/logo4/120/60" alt="Cliente 4">
+        </div>
+    </section>
+
+    <!-- Cotización -->
+    <section id="cotizacion" class="cotizacion">
+      <h2>Solicita tu Cotización</h2>
+      <form id="formCotizacion">
+        <input type="text" id="nombre" placeholder="Tu nombre">
+        <input type="email" id="email" placeholder="Tu correo">
+        <textarea id="detalle" placeholder="Describe tu proyecto"></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Agencia Creativa - Todos los derechos reservados</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

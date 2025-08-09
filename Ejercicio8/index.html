@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App Móvil - Página de Inicio</title>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Cafe<span>App</span></div>
+    <nav>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#descargar">Descargar</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Tu app favorita</h1>
+      <p>Descubre cómo esta App puede facilitar tu vida diaria con herramientas inteligentes y un diseño fácil de usar.</p>
+      <a href="#descargar" class="btn-cta">Descargar ahora</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://picsum.photos/id/1060/300/600" alt="Captura de la app en un teléfono">
+    </div>
+  </section>
+
+  <main>
+    <section id="beneficios" class="beneficios">
+      <h2>Beneficios</h2>
+      <div class="grid">
+        <article>
+          <h3>Fácil de usar</h3>
+          <p>Interfaz intuitiva que te permite navegar sin complicaciones.</p>
+        </article>
+        <article>
+          <h3>Segura</h3>
+          <p>Protección de datos con la más alta seguridad.</p>
+        </article>
+        <article>
+          <h3>Actualizada</h3>
+          <p>Mejoras constantes para ofrecerte nuevas funciones.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="descargar" class="descargar">
+      <h2>Descarga la App</h2>
+      <p>Disponible para Android y iOS.</p>
+      <div class="store-buttons">
+        <button class="store-btn" data-platform="Google Play">
+           Google Play
+        </button>
+        <button class="store-btn" data-platform="App Store">
+           App Store
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MiApp - Todos los derechos reservados</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fdfdfd;
+  color: #333;
+}
+
+.header {
+  background: linear-gradient(135deg, #a0e7e5, #b4f8c8, #fbe7c6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom-left-radius: 50px;
+}
+
+.header-content {
+  max-width: 70%;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1rem;
+}
+
+.header-img {
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.form-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+label {
+  display: block;
+  margin: 0.8rem 0 0.3rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: #f9f9f9;
+  font-size: 0.95rem;
+}
+
+input:focus, select:focus {
+  border-color: #a0e7e5;
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.checkbox-group label {
+  background: #fbe7c6;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checkbox-group input {
+  margin-right: 0.4rem;
+}
+
+.acepto-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.acepto-group input {
+  margin-right: 0.5rem;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 0.9rem;
+  background: #a0e7e5;
+  color: #333;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+  background: #88d7d4;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 2rem;
+}
+
+/* Mensaje flotante */
+.mensaje {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #a0e7e5;
+  color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.mensaje.show {
+  opacity: 1;
+  transform: translateY(0);
+}

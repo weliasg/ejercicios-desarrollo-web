@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro - Evento Creativo 2025</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <h1>Registro al Evento Creativo 2025</h1>
+      <p>Únete a la experiencia donde la innovación y el arte se encuentran.</p>
+    </div>
+    <img src="https://picsum.photos/seed/evento/200/200" alt="Evento" class="header-img">
+  </header>
+
+  <main>
+    <section class="form-section">
+      <form id="registroForm" class="form-card">
+        <h2>Completa tu inscripción</h2>
+
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo"/>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com"/>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="000-000-0000"/>
+
+        <label for="categoria">Tipo de entrada</label>
+        <select id="categoria" name="categoria">
+          <option value="">-- Selecciona --</option>
+          <option value="general">General</option>
+          <option value="vip">VIP</option>
+          <option value="estudiante">Estudiante</option>
+        </select>
+
+        <label>Intereses</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="intereses" value="charlas"> Charlas</label>
+          <label><input type="checkbox" name="intereses" value="talleres"> Talleres</label>
+          <label><input type="checkbox" name="intereses" value="networking"> Networking</label>
+        </div>
+
+        <div class="acepto-group">
+          <input type="checkbox" id="acepto" name="acepto"/>
+          <label for="acepto">Acepto términos y condiciones</label>
+        </div>
+
+        <button type="submit" class="btn-enviar">Registrarme</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Evento Creativo - Todos los derechos reservados</p>
+  </footer>
+
+  <div id="mensaje" class="mensaje"></div>
+  <script src="script.js"></script>
+</body>
+</html>

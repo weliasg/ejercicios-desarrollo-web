@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Moderna</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Tienda</div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Contacto</a>
+    </nav>
+    <div class="cart-indicator">
+      🛒 <span id="cartCount">0</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 class="title-big">Estilo Moderno, Calidad Real</h1>
+    <p class="subtitle">Una selección de productos cuidadosamente elegidos para ti</p>
+  </section>
+
+  <main>
+    <section class="catalogo">
+      <article class="producto" data-nombre="Auriculares Pro" data-precio="79.99">
+        <img src="https://picsum.photos/id/180/500/400" alt="Auriculares inalámbricos">
+        <div class="info">
+          <h2>Auriculares</h2>
+          <p class="desc">Sonido envolvente y cancelación de ruido para una experiencia premium.</p>
+          <p class="precio">Q79.99</p>
+          <button class="btn">Añadir</button>
+        </div>
+      </article>
+
+      <article class="producto" data-nombre="Reloj Minimal" data-precio="149.00">
+        <img src="https://picsum.photos/id/1062/500/400" alt="Reloj de pulsera">
+        <div class="info">
+          <h2>Reloj</h2>
+          <p class="desc">Diseño elegante con correa de cuero y esfera minimalista.</p>
+          <p class="precio">Q149.00</p>
+          <button class="btn">Añadir</button>
+        </div>
+      </article>
+
+      <article class="producto" data-nombre="Mochila Urbana" data-precio="59.50">
+        <img src="https://picsum.photos/id/1074/500/400" alt="Mochila gris">
+        <div class="info">
+          <h2>Mochila</h2>
+          <p class="desc">Ligera, resistente y perfecta para la ciudad o viajes cortos.</p>
+          <p class="precio">Q59.50</p>
+          <button class="btn">Añadir</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tienda - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Mensaje flotante -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

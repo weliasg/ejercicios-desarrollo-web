@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Journal</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">The <span>Journal</span></div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Categorías</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="categorias">
+    <button class="cat-btn active" data-cat="all">Todo</button>
+    <button class="cat-btn" data-cat="AI">IA</button>
+    <button class="cat-btn" data-cat="Hardware">Hardware</button>
+    <button class="cat-btn" data-cat="Software">Software</button>
+  </section>
+
+  <main class="layout">
+    <!-- Columna izquierda -->
+    <section class="col-izq">
+      <article class="principal" data-cat="AI" data-full="Texto completo de la noticia IA...">
+        <img src="https://picsum.photos/id/1011/800/450" alt="Noticia principal">
+        <div class="texto">
+          <h1>IA revoluciona el diseño gráfico</h1>
+          <p>La inteligencia artificial se convierte en la herramienta preferida para creativos en todo el mundo.</p>
+        </div>
+      </article>
+
+      <article class="secundaria" data-cat="Hardware" data-full="Texto completo de la noticia hardware...">
+        <img src="https://picsum.photos/id/1059/800/450" alt="Noticia hardware">
+        <div class="texto">
+          <h2>Procesadores de 2nm llegan en 2026</h2>
+        </div>
+      </article>
+    </section>
+
+    <!-- Columna derecha -->
+    <aside class="col-der">
+      <div class="rapida" data-cat="Software" data-full="Texto completo sobre la actualización de software...">
+        <h3>Actualización mayor en Linux</h3>
+        <small>Hace 2h</small>
+      </div>
+      <div class="rapida" data-cat="AI" data-full="Texto completo sobre IA en medicina...">
+        <h3>IA detecta enfermedades antes de síntomas</h3>
+        <small>Hace 5h</small>
+      </div>
+      <div class="rapida" data-cat="Hardware" data-full="Texto completo sobre nuevos portátiles gamer...">
+        <h3>Lanzan portátiles gamer ultraligeros</h3>
+        <small>Hace 1 día</small>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tech Journal</p>
+  </footer>
+
+  <!-- Panel lectura -->
+  <div id="panel" class="panel">
+    <button id="cerrarPanel">✖</button>
+    <div id="panelContenido"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
